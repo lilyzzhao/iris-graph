@@ -19,7 +19,8 @@ ggplot(iris, aes(x= Petal.Length, y = Petal.Width))+
        x = "Petal Length",
        y = "Petal Width"
   ) +
-  facet_wrap(~Species)
+  facet_wrap(~Species)+
+  theme_classic()
   
 
 ```
