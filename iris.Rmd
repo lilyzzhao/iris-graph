@@ -11,9 +11,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(tidyverse)
+library(RColorBrewer)
 
 ggplot(iris, aes(x= Petal.Length, y = Petal.Width))+
-  geom_point()
+  geom_point(aes(color = Species), pch = 21, size = 4)
+  
 
 ```
 
