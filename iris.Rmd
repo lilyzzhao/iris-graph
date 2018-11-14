@@ -14,7 +14,12 @@ library(tidyverse)
 library(RColorBrewer)
 
 ggplot(iris, aes(x= Petal.Length, y = Petal.Width))+
-  geom_point(aes(color = Species), pch = 21, size = 4)
+  geom_point(aes(color = Species), pch = 21, size = 4) +
+  labs(title = "Iris Petal Length vs. Width by Species",
+       x = "Petal Length",
+       y = "Petal Width"
+  ) +
+  facet_wrap(~Species)
   
 
 ```
